@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskly | Advanced Task Scheduler</title>
+    <meta name="description" content="A premium task reminder application with date and time scheduling.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/311/311024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <main class="container">
+        <div class="glass-card">
+            <header>
+                <div class="logo-area">
+                    <span class="logo-icon">✨</span>
+                    <h1>Taskly</h1>
+                </div>
+                <p class="tagline">Plan today, achieve tomorrow.</p>
+            </header>
+
+            <div class="input-section">
+                <div class="input-field full-width">
+                    <label>Task Summary</label>
+                    <input type="text" id="task" placeholder="What needs to be done?" autocomplete="off">
+                </div>
+
+                <div class="row">
+                    <div class="input-field">
+                        <label>Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="input-field">
+                        <label>Time</label>
+                        <input type="time" id="time">
+                    </div>
+                </div>
+
+                <button id="add-task" class="main-btn">
+                    <span>Add Reminder</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+
+            <div class="list-section">
+                <div class="list-header">
+                    <h2>Upcoming Schedules</h2>
+                    <span id="task-count" class="badge">0</span>
+                </div>
+
+                <div id="empty-state" class="empty-state">
+                    <div class="empty-icon">📅</div>
+                    <p>Your schedule is clear. Relax!</p>
+                </div>
+
+                <div id="task-list" class="task-list">
+                    <!-- Tasks will appear here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="notification-portal"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
