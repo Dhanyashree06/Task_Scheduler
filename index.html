@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taskly | Advanced Task Scheduler</title>
-    <meta name="description" content="A premium task reminder application with date and time scheduling.">
+    <title>Taskly | The Future of Productivity</title>
+    <meta name="description"
+        content="A premium task reminder application with date and time scheduling. Stay organized and never miss a deadline.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/311/311024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,20 +15,89 @@
 </head>
 
 <body>
+    <!-- Background Elements -->
     <div class="background-animation">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+        <div class="circle pulse-circle"></div>
+        <div class="circle drift-circle"></div>
+        <div class="circle static-circle"></div>
     </div>
 
-    <main class="container">
-        <div class="glass-card">
-            <header>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Taskly</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#app-section" class="nav-cta">Open App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge-hero">New: Notification Support UI 🚀</div>
+            <h1>Master Your Time with <span class="gradient-text">Precision</span></h1>
+            <p>The most elegant way to schedule, track, and conquer your tasks. Built for those who value every second.
+            </p>
+            <div class="hero-actions">
+                <a href="#app-section" class="main-btn">Start Scheduling — It's Free</a>
+                <a href="#features" class="secondary-btn">How it works</a>
+            </div>
+        </div>
+        <div class="hero-preview">
+            <div class="preview-card">
+                <div class="preview-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="preview-body">
+                    <div class="shimmer-line"></div>
+                    <div class="shimmer-line short"></div>
+                    <div class="shimmer-item"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-title">
+            <h2>Everything you need to <span class="gradient-text">excel</span></h2>
+            <p>Simple tools designed for maximum impact.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔔</div>
+                <h3>Smart Alerts</h3>
+                <p>Never miss a task with our built-in notification engine and visual toasts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Always Synced</h3>
+                <p>Your tasks are saved locally so you never lose track of what's next.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Premium UI</h3>
+                <p>A glassmorphism design that looks stunning on any device, day or night.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section -->
+    <main id="app-section" class="app-container">
+        <div class="glass-card main-app-card">
+            <header class="app-header">
                 <div class="logo-area">
                     <span class="logo-icon">✨</span>
-                    <h1>Taskly</h1>
+                    <h2>Taskly Dashboard</h2>
                 </div>
-                <p class="tagline">Plan today, achieve tomorrow.</p>
+                <p class="tagline">Manage your upcoming schedules below.</p>
             </header>
 
             <div class="input-section">
@@ -55,7 +125,7 @@
 
             <div class="list-section">
                 <div class="list-header">
-                    <h2>Upcoming Schedules</h2>
+                    <h3>Upcoming Schedules</h3>
                     <span id="task-count" class="badge">0</span>
                 </div>
 
@@ -70,6 +140,18 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">✨ Taskly</div>
+            <p>© 2026 Developed with ❤️ by Dhanyashree</p>
+            <div class="social-links">
+                <a href="#">Github</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
     <div id="notification-portal"></div>
 
